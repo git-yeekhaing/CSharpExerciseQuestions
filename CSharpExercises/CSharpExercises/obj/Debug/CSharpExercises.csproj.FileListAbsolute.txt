@@ -1,0 +1,7 @@
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\bin\Debug\CSharpExercises.exe.config
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\bin\Debug\CSharpExercises.exe
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\bin\Debug\CSharpExercises.pdb
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\obj\Debug\CSharpExercises.csprojAssemblyReference.cache
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\obj\Debug\CSharpExercises.csproj.CoreCompileInputs.cache
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\obj\Debug\CSharpExercises.exe
+C:\Users\digskill\Desktop\DotNet\CSharpExerciseQuestions\CSharpExercises\CSharpExercises\obj\Debug\CSharpExercises.pdb
