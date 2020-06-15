@@ -58,5 +58,43 @@ namespace CSharpExercises
                 belowSpace += 1;
             }
         }
+
+
+        public static void Pattern2()
+        {
+            Console.WriteLine("Enter max row count");
+            int rowCnt = Convert.ToInt32(Console.ReadLine());
+
+            // for upper loop
+            char printChar = 'A';
+            int innerSpaceCnt = 1;
+
+            for (int row = 1; row <= rowCnt; row++)
+            {
+                // print space 
+                for (int space = 0; space < (rowCnt - row); space++)
+                {
+                    Console.Write(" ");
+                }
+
+                // print start char
+                Console.Write(printChar);
+
+                if (row != 1) {
+                    // print inner loop
+                    for (int innerSpace = 1; innerSpace <= innerSpaceCnt; innerSpace++)
+                    {
+                        Console.Write(" ");
+                    }
+
+                    innerSpaceCnt += 2;
+                    // print end char
+                    Console.Write(printChar);
+                }
+                
+                printChar++;
+                Console.WriteLine();
+            }
+        }      
     }
 }
