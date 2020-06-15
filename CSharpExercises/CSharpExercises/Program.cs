@@ -17,6 +17,8 @@ namespace CSharpExercises
             if (result == true)
               Console.WriteLine($"{input} is a Harshad number");
 
+            // 2nd methods
+            HarshadNumber.checkForHarshad(input);
             Console.ReadLine();
         }
     }
