@@ -59,7 +59,6 @@ namespace CSharpExercises
             }
         }
 
-
         public static void Pattern2()
         {
             Console.WriteLine("Enter max row count");
@@ -128,6 +127,72 @@ namespace CSharpExercises
 
                 Console.WriteLine();
             }
+        }
+  
+        public static void Pattern3()
+        {
+            Console.WriteLine("Enter the row count.");
+            int diamondSize = Convert.ToInt32(Console.ReadLine());
+
+            // Top Loop
+            int numCnt = 1;
+            for (int row = 1; row <= diamondSize; row++)
+            {
+                // print space
+                for (int space = 1; space <= (diamondSize - row) + 1; space++)
+                {
+                    Console.Write(" ");
+                }
+
+                int rowNumber = row; bool center = false;
+                // print number
+                for (int numberprint = 1; numberprint <= numCnt; numberprint++)
+                {
+                    Console.Write(rowNumber);
+
+                    if (rowNumber == 1)
+                    {
+                        center = true;
+                    }
+                   
+                    // increment/decrement
+                    rowNumber = (center == true)? ++rowNumber : --rowNumber;
+                }
+
+                numCnt += 2;
+                // print new line
+                Console.WriteLine();
+            }
+
+            numCnt -= 4;
+            // Below Loop
+            for(int row = 1; row <= diamondSize - 1; row++)
+            {
+                // print space
+                for (int space = 1; space <= row + 1; space++)
+                {
+                    Console.Write(" ");
+                }
+
+                // print number
+                int rowNumber = diamondSize - row; bool center = false;
+                for (int num = 1; num <= numCnt; num++)
+                {
+                    Console.Write(rowNumber);
+
+                    if (rowNumber == 1)
+                    {
+                        center = true;
+                    }
+
+                    // increment/decrement
+                    rowNumber = (center == true) ? ++rowNumber : --rowNumber;
+                }
+
+                numCnt -= 2;
+                // print new line
+                Console.WriteLine();
+            }        
         }
     }
 }

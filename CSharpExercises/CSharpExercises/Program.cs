@@ -21,7 +21,7 @@ namespace CSharpExercises
             HarshadNumber.checkForHarshad(input);
            */
             // diamond pattern1
-            DiamondPattern.Pattern2();
+            DiamondPattern.Pattern3();
             Console.ReadLine();
         }
     }
