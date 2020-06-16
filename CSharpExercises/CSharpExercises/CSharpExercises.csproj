@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DiamondPattern.cs" />
     <Compile Include="HarshadNumber.cs" />
+    <Compile Include="NumberPattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
