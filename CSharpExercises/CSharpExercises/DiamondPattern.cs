@@ -69,10 +69,11 @@ namespace CSharpExercises
             char printChar = 'A';
             int innerSpaceCnt = 1;
 
+            // Top Loop
             for (int row = 1; row <= rowCnt; row++)
             {
                 // print space 
-                for (int space = 0; space < (rowCnt - row); space++)
+                for (int space = 0; space < (rowCnt - row) + 1; space++)
                 {
                     Console.Write(" ");
                 }
@@ -80,8 +81,9 @@ namespace CSharpExercises
                 // print start char
                 Console.Write(printChar);
 
-                if (row != 1) {
-                    // print inner loop
+                if (row != 1)
+                {
+                    // print inner space
                     for (int innerSpace = 1; innerSpace <= innerSpaceCnt; innerSpace++)
                     {
                         Console.Write(" ");
@@ -91,10 +93,41 @@ namespace CSharpExercises
                     // print end char
                     Console.Write(printChar);
                 }
-                
+
                 printChar++;
                 Console.WriteLine();
             }
-        }      
+
+            innerSpaceCnt -= 4; printChar--;
+            // Below Loop
+            for (int row = 1; row <= rowCnt - 1; row++)
+            {
+                printChar--;
+                // print space
+                for (int space = 1; space <= row + 1; space++)
+                {
+                    Console.Write(" ");
+                }
+
+                // print start char
+                Console.Write(printChar);
+
+                if (row != rowCnt - 1)
+                {
+                    // print inner space
+                    for (int innerSpace = 1; innerSpace <= innerSpaceCnt; innerSpace++)
+                    {
+                        Console.Write(" ");
+                    }
+
+                    innerSpaceCnt -= 2;
+                    // print end char
+                    Console.Write(printChar);
+
+                }
+
+                Console.WriteLine();
+            }
+        }
     }
 }
